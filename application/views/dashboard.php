@@ -38,36 +38,6 @@
 
     </div>
     </div>
-    <!-- <div class="modal fade" id="t_pgjg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Isi Data</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form class="form-signin" action="<?php echo base_URL()?>c_apps/tambah_pgjg" method="post">
-                        <legend>Tambah Data</legend>
-                        <i class="nav-icon fas fa-user-plus" style="margin-right: 10px;"></i>
-                        <input type="text" class="input-block-level" placeholder="Nama Pengunjung" name="nama" autofocus
-                            required><br><br>
-                        <i class="nav-icon fas fa-address-book" style="margin-right: 10px;"></i>
-                        <input type="text" class="input-block-level" placeholder="Telepon" name="kontak"
-                            required><br><br>
-                        <i class="nav-icon fas fa-at" style="margin-right: 10px;"></i>
-                        <input type="email" class="input-block-level" placeholder="Email" name="email" required><br><br>
-                        <br><br><br>
-                        <div class="modal-footer">
-                            <button class="btn btn-large btn-primary" type="submit">Simpan</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
 
     <div class="modal fade" id="t_pgjg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
