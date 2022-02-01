@@ -48,7 +48,7 @@ $.widget.bridge('uibutton', $.ui.button)
 <script src="<?php echo base_url()?>/assets/dist/js/pages/dashboard.js"></script>
 <script>
 $(document).ready(function() {
-    $(document).on('click', '#edit', function() {
+    $(document).on('click', '#editbuku', function() {
         var id_b = $(this).data('id');
         var jdl = $(this).data('jdl');
         var ktgr = $(this).data('ktgr');
@@ -61,6 +61,18 @@ $(document).ready(function() {
         $('#rak').val(rak);
         $('#skat').val(kdktgr);
         $('#skat').text(ktgr);
+    })
+})
+$(document).ready(function() {
+    $(document).on('click', '#editpgjg', function() {
+        var id = $(this).data('id');
+        var nama = $(this).data('nm');
+        var tlp = $(this).data('tlp');
+        var email = $(this).data('email');
+        $('#id').val(id);
+        $('#nama').val(nama);
+        $('#kontak').val(tlp);
+        $('#email').val(email);
     })
 })
 </script>

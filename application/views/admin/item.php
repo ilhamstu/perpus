@@ -1,11 +1,9 @@
 <section class="content">
     <button class="btn btn-primary btn-sm" legend="Tambah Item" data-toggle="modal" data-target="#t_buku">
-        <i class="nav-icon fas fa-plus"></i>
-        Tambah Item
+        <i class="nav-icon fas fa-plus">Tambah Item</i>
     </button>
     <button class="btn btn-success btn-sm" legend="Tambah Item" data-toggle="modal" data-target="#t_ktgr">
-        <i class="nav-icon fas fa-plus"></i>
-        Tambah Kategori
+        <i class="nav-icon fas fa-plus">Tambah Kategori</i>
     </button>
     <table class="table">
         <thead align="center">
@@ -35,10 +33,10 @@
                 <td>
                     <!-- <?php echo anchor('admin/edit_buku/'.$c_buku->kdBuku,'<div class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></div>') ?> -->
                     <!-- <?php echo anchor('admin/hapus_buku/'.$c_buku->kdBuku,'<div class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></div>') ?> -->
-                    <button type="button" class="btn btn-sm btn-primary" id="edit" data-jdl="<?=$c_buku->jdlBuku?>"
+                    <button type="button" class="btn btn-sm btn-primary" id="editbuku" data-jdl="<?=$c_buku->jdlBuku?>"
                         data-id="<?=$c_buku->kdBuku?>" data-kdktgr="<?php echo $c_buku->kdKategori ?>"
                         data-ktgr="<?=$c_buku->nmKategori?>" data-stok="<?=$c_buku->stok?>" data-rak="<?=$c_buku->rak?>"
-                        data-toggle="modal" data-target="#exampleModal"><i class="fas fa-edit"></i>
+                        data-toggle="modal" data-target="#modaleditbuku"><i class="fas fa-edit"></i>
                     </button>
                     <a href="<?=base_url('admin/hapus_buku/'.$c_buku->kdBuku)?>"
                         onclick="javascript: return confirm('Aksi ini tidak bisa dikembalikan, yakin ingin menghapus?')"
@@ -50,11 +48,10 @@
     </table>
     <hr>
     <?=$links;?>
-
 </section>
 
 <!-- Modal Edit-->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="modaleditbuku tabindex=" -1" role="dialog" aria-labelledby="modaleditbuku"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -179,7 +176,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-large btn-primary" type="submit">Tambah</button>
+                    <button class="btn btn-md btn-primary" type="submit">Tambah</button>
                 </div>
             </form>
         </div>
